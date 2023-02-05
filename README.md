@@ -10,7 +10,7 @@ Projeto final do curso Programadores Cariocas, realizado em dupla, com a finalid
 <div align="center">
 <h1 align="center">Passo a passo para rodar o projeto</h1>
 <br>
-<p align="left">
+<p align="center">
 - Instale o VS Code, siga as configurações recomendadas e abra.
 - Instale o Node.js, siga as configurações recomendadas e salve.
 - Abra o prompt de comando e digite "npm install -g npm" e aperte enter.
@@ -18,14 +18,14 @@ Projeto final do curso Programadores Cariocas, realizado em dupla, com a finalid
 
 Parte para idealização do projeto
 
-- Crie uma pasta na área de trabalho
-- Abra o VS Code
-- Crie um arquivo index.js na pasta criada anteriormente
-- Abra o terminal para dar os seguintes códigos:
-npm init -y
-npm install express
-npm install nodemon
-npm install express-handlebars
+- Crie uma pasta na área de trabalho <br>
+- Abra o VS Code <br>
+- Crie um arquivo index.js na pasta criada anteriormente <br>
+- Abra o terminal para dar os seguintes códigos: <br>
+- npm init -y <br>
+- npm install express <br>
+- npm install nodemon <br>
+- npm install express-handlebars <br>
 
 Agora configurações para fazer a aplicação rodar sem erros:
 
