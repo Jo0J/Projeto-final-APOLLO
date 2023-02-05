@@ -116,14 +116,22 @@ Agora a parte mais importante, como adicionar integrar essas informações do Wo
 <h2 align="center">As rotas foram:</h2>
 <br>
 <p align="center">
-Home<br>
-Lojas<br>
+Início/Home<br>
+Loja<br>
 Produtos<br>
 Suporte<br>
 Sobre<br>
 Atualizações<br>
-Administrador<br>
+Administrador/adm<br>
 Login<br>
+ApolloP11lite<br>
+ApolloP11pro<br>
+ApolloP12lite<br>
+ApolloP12pro<br>
+ApolloP13deluxe<br>
+Noticia1<br>
+Noticia2<br>
+Noticia3<br>
  </p>
  <br>
 
