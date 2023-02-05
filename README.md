@@ -79,6 +79,40 @@ app.listen(3000, () =>{
 
 <h2>Banco de dados, sua documentação e implementação do CRUD</h2>
 
+<p>
+
+Primeiro será precisa baixar o XAMPP e o WorkBench MYSQL.
+
+- Inicie os programas com as configurações recomendadas deles.
+- Abra o XAMPP primeiro e aperte em "start" ao lado do nome "MySql".
+- Agora abra o Workbench e crie um terminal no "+".
+- Ao entrar ele vai estar em "Administration", mas mude para "Schemas".
+
+Então entramos na parte da criação do banco de dados:
+
+- Dê "create database apollo;" e aperte em CTRL e Enter.
+- Dê "use apollo;" e aperte em CTRL e Enter.
+
+Agora configure o que vai ser exibido da seguinte forma:
+
+Create table smartphone(
+ID INT(5) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+smartphone VARCHAR(100) NOT NULL,
+lançamento VARCHAR (100) NOT NULL,
+versaoAtual VARCHAR (100) NOT NULL,
+ProxVersao VARCHAR (100) NOT NULL,
+Preço FLOAT(8) NOT NULL
+);
+
+- Aperte em CTRL e Enter.
+- Por fim, dê "select * from smartphone" e aperte em CTRL e Enter para visualizar a tabela.
+
+Agora a parte mais importante, como adicionar integrar essas informações do Workbench em nosso código no VS Code?
+
+(João por favor descreva aqui)
+
+</p>
+
 <h2 align="center">As rotas foram:</h2>
 <br>
 <p align="center">
