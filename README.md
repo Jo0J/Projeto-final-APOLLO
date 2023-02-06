@@ -5,6 +5,7 @@ Projeto final do curso Programadores Cariocas, realizado em dupla, com o objetiv
 
 - Keep (do Google)
 - Drive (do Google)
+- Canva
 - GitHub
 - VS Code
 - Workbench / MySql
