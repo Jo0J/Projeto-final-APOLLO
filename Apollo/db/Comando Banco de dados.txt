@@ -21,14 +21,6 @@ Preço Float(10)
 
 select * from prodFuturos; 
 
-use senac;
-
-select * from estudantes;
-
-create database exercicio;
-
-use exercicio;
-
 create table usuarios(
 ID INT(10) primary key auto_increment NOT NULL,
 nome varchar(100),
