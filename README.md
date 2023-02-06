@@ -14,7 +14,7 @@ Projeto final do curso Programadores Cariocas, realizado em dupla, com o objetiv
 - Whatsapp
 
 
-## O passo a passo do projeto foi da seguinte forma:
+## O passo a passo do projeto foi da seguinte forma ⤵️
 
 - Instale o VS Code, siga as configurações recomendadas e abra.
 - Instale o Node.js, siga as configurações recomendadas e salve.
@@ -115,7 +115,7 @@ npm start
 
 - Toda construção foi baseado na arquitetura MVC
 
-## Banco de dados, sua documentação e implementação do CRUD
+## Banco de dados, sua documentação e implementação do CRUD ⤵️
 
 - Primeiro, baixamos o XAMPP e o WorkBench MYSQL.
 - Iniciamos os programas com as configurações recomendadas deles.
@@ -180,7 +180,7 @@ Agora a parte mais importante, como adicionar e integrar essas informações do 
 - Noticia2
 - Noticia3
 
-## Passo a passo para baixar e rodar o projeto: 
+## Passo a passo para baixar e rodar o projeto ⤵️
 
 - Clique em code na parte superior do projeto 
 
@@ -190,7 +190,7 @@ Agora a parte mais importante, como adicionar e integrar essas informações do 
 
 - Abra o projeto no vsCode
 
-- Abra o terminal e escreva os comandos ⤵️
+- Abra o terminal e escreva os comandos:
 
 
 ```
@@ -202,7 +202,7 @@ npm i ou npm install
 npm start 
 ```
 
-## Responsáveis
+## Responsáveis ⤵️
 
 - Adriano Rodrigues - páginas handlebars, css, javascript e readme.
 - João Faustino - backend, implementação do CRUD e diagrama.
