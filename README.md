@@ -157,8 +157,147 @@ select * from smartphone
 
 Agora a parte mais importante, como adicionar e integrar essas informações do Workbench em nosso código no VS Code?
 
-- JOÃO É COM VOCÊ
+- Declaramos o MySQL para poder usá-lo em nosso projeto com:
 
+```
+const mysql = require ('mysql')
+```
+
+- Esse código fica no topo da página de index.js, abaixo das duas primeiras opções previamente adicionadas.
+- Precisavamos realizar a conexão do nosso projeto com o banco de dados, então usamos:
+
+```
+const conn = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password:'',
+    database: 'apollo'
+})
+```
+
+- Note que o host definimos como localhost, o user pré definido no início do Workbench, nenhuma senha e database (o nome do banco) como apollo.
+
+Agora de fato nosso CRUD:
+
+- Criamos duas pastas .handlebars em "views" chamadas editar.handlebars e inserir.handlebars.
+
+Em editar definimos uma página para editar, visualizar ou excluir as seguintes informações de um produto:
+
+- Nome do modelo
+- Data de lançamento
+- Versão atual
+- Próxima versão
+- Preço
+
+Precisariamos declarar as edições acima, portanto para criar as rotas das informações entre o código no VS Code e no banco de dados, alguns métodos/códigos foram usados no index.js:
+
+```
+app.get('/adm/editar/:ID', (req, res) =>{
+    const ID = req.params.ID
+    const sql = (`SELECT * FROM smartphone where id = ${ID}`)
+
+    
+    conn.query(sql, function (err, data){
+        if (err) {
+            console.log(err)
+            return
+        }
+
+        const smartphone = data[0]
+
+        res.render('./crud/editar', {smartphone})
+    })
+})
+```
+
+- O código acima foi declarado para visualizar informações
+
+```
+app.post('/adm/remove/:ID', (req, res) =>{
+    const ID = req.params.ID
+    const sql = `DELETE FROM usuarios WHERE ID = ${ID}`
+
+    conn.query(sql, function(err, data){
+        if (err) {
+            console.log(err)
+            return
+        }
+        res.redirect('/adm/inserir')
+    })
+})
+```
+
+- O código acima foi declarado para deletar informações.
+
+```
+app.post('/editar/atualizar',(req, res) =>{
+    const ID = req.body.ID
+    const smartphone = req.body.smartphone
+    const lançamento = req.body.lançamento
+    const versaoAtual = req.body.versaoAtual
+    const ProxVersao = req.body.ProxVersao
+    const Preço = req.body.Preço
+
+    const sql = `UPDATE smartphone set smartphone = '${smartphone}', lançamento =  '${lançamento}', versaoAtual = '${versaoAtual}', ProxVersao = '${ProxVersao}', Preço = '${Preço}' where ID = ${ID};`
+
+    conn.query(sql, function(err, data){
+        if(err){
+            console.log(err)
+            return
+        }
+        res.redirect('/adm/inserir')
+    })
+})
+```
+
+- O código acima foi declarado para atualizar informações.
+
+Por fim:
+
+```
+app.post('/apollo/insert', (req, res) =>{
+    
+    const smartphone = req.body.smartphone
+    const lançamento = req.body.lançamento
+    const versaoAtual = req.body.versaoAtual
+    const ProxVersao = req.body.ProxVersao
+    const Preço = req.body.Preço
+
+
+    const sql = `INSERT INTO smartphone(smartphone , lançamento, versaoAtual, ProxVersao, Preço) values ('${smartphone}', '${lançamento}', '${versaoAtual}' , '${ProxVersao}', '${Preço}');`
+
+    conn.query(sql, function(err){
+        if(err){
+            console.log(err)
+        }
+        res.redirect('/adm/inserir')
+    })
+})
+```
+
+- O código acima foi declarado para inserir informações.
+
+## Páginas e uso do CRUD
+
+- O crud foi usado especialmente para a página "Atualizações", disponível no footer do site.
+- Nela, o usuário pode ver informações do smartphone, como modelo, lançamento, versão atual, próxima versão e preço.
+- A página é atualizada automaticamente com a implementação do CRUD.
+
+Mas como isso é feito?
+
+- Criamos uma página de "Administradores"
+- É necessário um email válido e senha com números, letras e caracteres especiais para entrar na área administrativa.
+
+Ao entrar na área administrativa:
+
+- Há a visualização (GET) dos dados que já foram ou serão inseridos.
+- O método POST foi declarado para atuar aqui, onde é possível inserir informações.
+
+Há uma opção no canto da tela chamada "Editar" e ao clicar somos levador à:
+
+- Página de edição e delete.
+- Aqui os métodos POST de editar e deletar foram implementados.
+- Todas as opções citadas acima são atualizadas automaticamente.
 
 ## As rotas criadas foram:  ⤵️
 
