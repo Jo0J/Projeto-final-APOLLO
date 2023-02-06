@@ -279,7 +279,7 @@ app.post('/apollo/insert', (req, res) =>{
 
 ## Páginas e uso do CRUD ⤵️
 
-- O crud foi usado especialmente para a página "Atualizações", disponível no footer do site.
+- O crud foi usado especialmente para as páginas "Atualizações" e "Login", construídas da mesma forma citada acima.
 - Nela, o usuário pode ver informações do smartphone, como modelo, lançamento, versão atual, próxima versão e preço.
 - A página é atualizada automaticamente com a implementação do CRUD.
 
