@@ -1,0 +1,413 @@
+/*NAVBAR E PÁGINA 1*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+  
+.body {
+  width: 100%;
+  height: 90vh;
+  background-image: url(/img/Inicial-new2.png);
+}
+
+ @media only screen and (min-width: 1900px) {
+  .body {
+  background-image: url(/img/background_1920.2.png) ;
+}
+}
+.body-nav{ 
+  height: 10vh;
+  background-color: black;
+}
+.logo {
+  width: 50px;
+  padding-left: 40px;
+}
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: transparent;
+  font-family: 'The Seasons Light', sans-serif;
+}
+  
+  /* Navbar options */
+ .navbar-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+.navbar-options a {
+  margin: 0 30px;
+  font-size: 1.2rem;
+  padding-left: 50px;
+  text-decoration: none;
+  color: white;
+  transition: white 0.2s ease;
+}
+
+ @media only screen and (min-width: 1900px) {
+  .navbar{
+    align-items: flex-end;
+}
+.navbar-options a{
+  font-size: 1.7rem;
+}    
+}
+
+.navbar-options a:hover {
+  color: gray;
+  }
+  
+  /* Navbar right */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+  }
+  
+  /* Search bar */
+  form {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  button[type="submit"] {
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+  }
+  
+  /* Login icon */
+  .navbar-right a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .navbar-right button i{
+color: white;
+  }
+  
+  /* Content */
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding: 50px;
+    color: white;
+  }
+
+  .content p{
+    display: flex;
+    color: white;
+    text-align: center;
+    padding-right: 700px;
+    margin-top: 4rem;
+    font-size: 2.0rem;
+  }
+
+/*  padding-right: 700px;
+    position: relative;
+    top: 70px;
+*/
+  
+  /* Neon pink text */
+  .neon-pink {
+    position: relative;
+    top: 30px;
+    font-size: 7.7rem;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 0 0 5px #ff0080, 0 0 10px #ff0080, 0 0 15px #ff0080, 0 0 20px #ff0080, 0 0 25px #ff0080, 0 0 30px #ff0080, 0 0 35px #ff0080;
+  }
+  
+  /* Neon white text */
+  .neon-white {
+    position: relative;
+    top: 10px;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+  }
+
+  @media only screen and (min-width: 1900px) {
+    .rotacionar {
+      top: 800px;
+      right: 320px;
+    }
+  }
+  .buttonpage2{
+
+    margin-left: 240px;
+      padding: 15px 40px;
+      background-color: white;
+      color: black;
+      cursor: pointer;
+      border-radius: 20px;
+      font-size: 1.1rem;
+      border: none;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .buttonpage2:hover {
+    background-color: gray;
+  }
+
+  .buttonpage2 a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Button */
+  .button1 {
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-family: 'The Seasons Light', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    right: -50px;
+    bottom: -20px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .button1:hover {
+    background-color: transparent;
+    color: white;
+  }
+  
+/*PÁGINA 2 - INFORMAÇÕES*/
+
+.body2 {
+    background-color: #F7F7F7;
+    width: 100%;
+    height: 115vh;
+  }
+
+  #countdown{
+    padding-top: 50px;
+  }
+  
+  .container {
+    display: flex;
+    padding-top: 100px;
+  }
+  
+  /* .left-side {
+    width: 50%;
+    padding-left: 50px;
+    padding-top: 130px;
+  } */
+
+.left-side {
+  width: 50%;
+  padding-left: 50px;
+  padding-top: 130px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+  .left-side #countdown{
+    color: #3BAEFF;
+    font-size: 5rem;
+  }
+
+  .left-side h1{
+    font-size: 3.4rem;
+  }
+
+  .left-side p{
+    font-size: 2.3rem;
+    text-align: justify;
+  }
+  
+  .right-side {
+    width: 50%;
+  }
+  
+  .rectangle1 {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  
+  .rectangle1 img {
+    max-width: 63%;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+  }
+
+  .rectangle1:hover img {
+    transform: scale(1.1);
+    }
+  
+
+/*PÁGINA 3 - ALGUNS PRODUTOS*/
+
+.joao{
+  display:flex;
+  justify-content:center
+}
+.page3{
+    width: 100%;
+    height: 130vh;
+
+    background-color: black;
+
+  }
+  
+        /* Título e subtítulo */
+        .page3 h1 {
+          top: 50px;
+          position: relative;
+          text-align: center;
+          font-size: 36px;
+          margin-bottom: 20px;
+          color: white;
+        }
+        .page3 h2 {
+          top: 50px;
+          position: relative;
+          text-align: center;
+          font-size: 24px;
+          margin-bottom: 40px;
+          color: white;
+        }
+  
+        /* Retângulos com imagens */
+        .rectangle {
+          top: 90px;
+          left: 15px;
+          width: 400px;
+          margin: 0 40px 0px 0px;
+          height: 500px;
+          position: relative;
+        }
+        .rectangle img {
+          width: 100%;
+          height: 100%;
+          border-radius: 20px;
+          transition: all 0.3s ease-in-out;
+        }
+  
+        /* Título e texto dentro dos retângulos */
+        .rectangle h3 {
+          position: absolute;
+          bottom: 40px;
+          left: 20px;
+          color: white;
+          font-size: 24px;
+        }
+        .rectangle p {
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+          color: white;
+          font-size: 18px;
+        }
+  
+        /* Botão "Saiba mais" */
+        .rectangle button {
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+          padding: 10px 20px;
+          background-color: black;
+          color: white;
+          border-radius: 20px;
+          border: none;
+          transition: background-color 0.3s ease-in-out;
+        }
+
+        .rectangle button a{
+          text-decoration: none;
+          color: white;
+        }
+        .rectangle button:hover {
+          background-color: gray;
+          cursor: pointer;
+        }
+        .rectangle:hover img {
+          transform: scale(1.06);
+        }
+
+/*PÁGINA 4*/
+
+.page4{
+  width: 100%;
+  height: 70vh;
+}
+
+
+.news-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 30px 30px 30px;
+}
+
+.news-card {
+  width: 30%;
+  text-align: center;
+}
+
+.news-card h2,
+.news-card p{
+  text-align: justify;
+}
+
+.news-card img {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.news-card a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.news-card img:hover {
+  transform: translateY(-10px);
+}
+

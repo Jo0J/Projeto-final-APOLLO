@@ -1,0 +1,49 @@
+create database apollo;
+use apollo;
+
+create table smartphone (
+ID INT(10) primary key auto_increment NOT NULL,
+smartphone VARCHAR(100),
+lançamento VARCHAR(100),
+versaoAtual VARCHAR(100),
+ProxVersao VARCHAR(100),
+Preço Float(10)
+);
+
+select * from smartphone;
+
+create table prodFuturos(
+ID INT(10) primary key auto_increment NOT NULL,
+tipo VARCHAR(100),
+modelo VARCHAR(100),
+Preço Float(10)
+);
+
+select * from prodFuturos; 
+
+use senac;
+
+select * from estudantes;
+
+create database exercicio;
+
+use exercicio;
+
+create table usuarios(
+ID INT(10) primary key auto_increment NOT NULL,
+nome varchar(100),
+sobrenome varchar (100),
+login varchar(100),
+senha varchar(100)
+
+);
+
+select * from usuarios;
+
+insert into usuarios (nome, sobrenome,login,senha) values ('Joao' ,'Cardoso', 'JoaoPFc@senac.com' , 'Senac12321');
+
+SELECT * FROM usuarios where id = 1;
+
+UPDATE usuarios set nome = 'Adriano', sobrenome = 'Rodrigues' where ID = 2;
+
+DELETE FROM usuarios WHERE ID = 2;

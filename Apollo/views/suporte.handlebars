@@ -1,0 +1,151 @@
+<div class="suporte">
+    <div class="suporte-form">
+    <form>
+        <h2>Entre em contato conosco!</h2>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" required></textarea>
+        <input class="button-form" type="submit" value="Envie" onclick="showMessage()">
+    </form>
+    </div>
+</div>
+
+<style>
+
+/*SUPORTE - FORMULÁRIO DE CONTATO*/
+
+.suporte{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: -170px;
+    background-color: #F7F7F7;
+}
+
+.suporte-form form {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+    padding: 2em;
+    color: white;
+    background-color: black; 
+    border: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    animation: border-color 1s linear infinite;
+  }
+
+  @keyframes border-color {
+    0% {
+      border-color: grey;
+    }
+    50% {
+      border-color: white;
+    }
+    100% {
+      border-color: grey;
+    }
+  }
+  
+  .suporte-form label {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  
+  .suporte-form input[type="text"],
+  .suporte-form input[type="email"],
+  .suporte-form textarea {
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+  }
+
+  .suporte-form h2{
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+    margin-bottom: 1em;
+  }
+  
+  .suporte-form input[type="submit"] {
+    background: white;
+    color: black;
+    padding: 0.5em 3em 0.5em 3em;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .suporte-form .button-form:hover {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+  }
+
+  .chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  .chat-button i {
+    font-size: 24px;
+    line-height: 60px;
+  }
+  .chat-container {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 90px;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+</style>
+
+<div class="chat-button">
+  <i class="fa fa-comments"></i>
+</div>
+
+<div class="chat-container">
+  <form>
+    <input type="text" placeholder="Digite sua mensagem aqui">
+    <button type="submit">Enviar</button>
+  </form>
+  <div class="chat-messages">
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $(".chat-button").click(function() {
+      $(".chat-container").toggle();
+    });
+  });
+</script>
+
+<script>
+function showMessage() {
+  alert("Mensagem enviada, entraremos em contato o mais breve possível!");
+}
+</script>

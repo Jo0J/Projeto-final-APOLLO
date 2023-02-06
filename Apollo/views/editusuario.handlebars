@@ -1,0 +1,19 @@
+<h1>Edite o estudante</h1>
+
+<form action="/usuarios/updateusuario" method="POST" class="form">
+    <input type="hidden" name="ID" value="{{usuario.ID}}"><!-- Aqui recebemos um input, mas o hidden nao exibe -->
+    <div class="form-control">
+        <label for="title">Nome do estudante</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite o nome do usurio" value="{{usuario.nome}}">
+    </div>
+    <div class="form-control">
+        <label for="sobrenome">Sobrenome do usuario</label>
+        <input type="text" name="sobrenome" id="sobrenome" placeholder="Qual sobrenome" value="{{usuario.sobrenome}}">
+    </div>
+
+    <input type="submit" value="Editar">
+
+    <form action="/usuario/remove/{{usuario.ID}}" method="POST">
+        <input type="submit" value="Remover">
+    </form>
+</form>

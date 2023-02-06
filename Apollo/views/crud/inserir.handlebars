@@ -1,0 +1,73 @@
+<body>
+
+
+
+  <table id="table">
+
+{{#each smartphone}}
+  <tr>
+
+  <th>{{this.ID}}</th>
+  <th>{{this.smartphone}}</th>
+  <th>{{this.lançamento}}</th>
+  <th>{{this.versaoAtual}}</th>
+  <th>{{this.ProxVersao}}</th>
+  <th>{{this.Preço}}</th>
+  <th>  <div class="action">
+        <a href="/adm/editar/{{this.ID}}">Editar</a>
+    </div>
+    </th>
+  </tr>
+{{/each}}
+
+    <thead>
+      <tr>
+
+        <th>id</th>
+        <th>Smartphone</th>
+        <th>Lançamento</th>
+        <th>Versão atual</th>
+        <th>Próxima versão</th>
+        <th>Preço</th>
+        <th>Editar</th>
+      </tr>
+    
+      
+    </thead>
+    <tbody>
+
+
+    </tbody>
+  </table>
+
+<div id="read">
+
+    <hr>
+<h1 id="title_read">cadastre o smartphone:</h1>
+
+<form action="/apollo/insert" method="POST" class="form">
+<div class="form-control">
+    <label for="title">Nome do Modelo do Aparelho</label>
+    <input type="text" name="smartphone" id="smartphone" placeholder="digite o Modelo do Aparelho">
+</div>
+<div class="form-control">
+    <label for="sobrenome">Data de lançamento </label>
+    <input type="text" name="lançamento" id="lançamento" placeholder="digite a data de lançamento">
+</div>
+<div class="form-control">
+    <label for="login">Versão Atual</label>
+    <input type="text" name="versaoAtual" id="versaoAtual" placeholder="digite a versão atual">
+</div>
+<div class="form-control">
+    <label for="senha">Proxima Versão </label>
+    <input type="text" name="ProxVersao" id="ProxVersao" placeholder="digite a proxima versão">
+</div>
+<div class="form-control">
+    <label for="senha">Preço </label>
+    <input type="text" name="Preço" id="Preço" placeholder="digite o preço">
+</div>
+<input type="submit" id="BTNcadastra" value="cadastrar">
+
+</form>
+</div>
+</body> 

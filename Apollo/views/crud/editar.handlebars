@@ -1,0 +1,29 @@
+<form action="/editar/atualizar" method="POST" class="form">
+    <input type="hidden" name="ID" value="{{smartphone.ID}}"><!-- Aqui recebemos um input, mas o hidden nao exibe -->
+    <div class="form-control">
+        <label for="title">Nome do Modelo</label>
+        <input type="text" name="smartphone" id="smartphone" placeholder="Digite o nome" value="{{smartphone.smartphone}}">
+    </div>
+    <div class="form-control">
+        <label for="title">Data do lançamento</label>
+        <input type="text" name="lançamento" id="lançamento" placeholder="Digite a data MM/AAAA" value="{{smartphone.lançamento}}">
+    </div>
+    <div class="form-control">
+        <label for="title">Versão Atual</label>
+        <input type="text" name="versaoAtual" id="versaoAtual" placeholder="Digite a Versão" value="{{smartphone.versaoAtual}}">
+    </div>
+    <div class="form-control">
+        <label for="title">Proxima Versão</label>
+        <input type="text" name="ProxVersao" id="ProxVersao" placeholder="Digite a Versão" value="{{smartphone.ProxVersao}}">
+    </div>
+    <div class="form-control">
+        <label for="preço">Preço</label>
+        <input type="text" name="Preço" id="Preço" placeholder="Qual Preço" value="{{smartphone.Preço}}">
+    </div>
+
+    <input type="submit" value="Editar">
+
+    <form action="/adm/remove/{{usuario.ID}}" method="POST">
+        <input type="submit" value="Remover">
+    </form>
+</form>

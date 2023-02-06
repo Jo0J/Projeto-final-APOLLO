@@ -1,0 +1,35 @@
+    <div class='container10'>
+      <main class='containerAreaGestor'>
+        <h1 class='titleAreaGestor'>Área do Administrador</h1>
+            <form class='formsAreaGestor'>
+                <section class='sectionAreaGestor'>
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email" placeholder="Seu melhor e-mail">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+                <button type="submit" class="btnConectese">Conecte-se</button>
+                </section>
+            </form>
+      </main>
+      <script>
+
+const form = document.querySelector('.formsAreaGestor');
+const email = document.querySelector('#email');
+const password = document.querySelector('#senha');
+const button = document.querySelector('.btnConectese a');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  if (email.value === "adm" && password.value === "123") {
+     window.location.href = './adm/inserir'; 
+  } else {
+    alert("Email e/ou senha estão incorretos");
+  }
+});
+      </script>
+    </div>
+
+<style>
+
+</style>

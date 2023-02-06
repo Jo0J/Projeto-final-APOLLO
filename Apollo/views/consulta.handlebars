@@ -1,0 +1,13 @@
+    <a href="/">adicionar estudantes</a>
+    {{#each usuarios}}
+    <div>
+        id - #{{this.ID}} <br>
+        <span class="bold"> <a href="/usuarios/{{this.ID}}">Nome :{{this.nome}}</a>
+        <br>           </span>
+        Sobrenome: {{this.sobrenome}}<br>
+        Email: {{this.login}}<br>
+       Senha: {{this.senha}}<br>
+    </div>
+    {{/each}}
+
+</h1>

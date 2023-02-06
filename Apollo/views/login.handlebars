@@ -1,0 +1,51 @@
+    <div class='container10'>
+      <main class='containerAreaGestor'>
+        <h1 class='titleAreaGestor'>Faça o Login</h1>
+            <form class='formsAreaGestor'>
+                <section class='sectionAreaGestor'>
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email" placeholder="Seu melhor e-mail">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+                <button type="submit" class="btnConectese">Conecte-se</button>
+                <a href="/cadastro" id="cadastro"><input type="button" value="Cadastre-se"></a>
+                </section>
+                
+            </form>
+      </main>
+      <script>
+
+const form = document.querySelector('.formsAreaGestor');
+const email = document.querySelector('#email');
+const password = document.querySelector('#senha');
+const button = document.querySelector('.btnConectese a');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  if (email.value.length < 7) {
+    alert("O campo de e-mail precisa ter no mínimo 7 caracteres.");
+  } else if (!/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{7,}$/.test(password.value)) {
+    alert("O campo de senha precisa ter no mínimo 7 caracteres, incluindo letras, números e caracteres especiais.");
+  } else if (!email.value || !password.value) {
+    alert("Por favor preencha todos os campos!");
+  } else {
+    window.alert("Login Efetuado com sucesso")
+    window.location.href = './';
+  }
+});
+      </script>
+    </div>
+
+
+<style>
+    #cadastro{
+    font-size: 20px;
+    background-color: white;
+    border: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: -15px;
+    cursor: pointer;
+    }
+</style>

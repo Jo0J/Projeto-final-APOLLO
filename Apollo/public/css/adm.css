@@ -1,0 +1,93 @@
+.container10 {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: -170px;
+    background: url(/img/Inicial.png);
+  }
+
+  .containerAreaGestor {
+    position: relative;
+    top: 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 40px;
+    background: rgb(0, 0, 0);
+  }
+  
+  .titleAreaGestor {
+    font-family: Indie;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 20px;
+    color: white;
+  }
+  
+  .sectionAreaGestor {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 50rem;
+    margin: 0.5rem auto;
+  }
+
+  button[type="submit"] {
+    color: black;
+  }
+  
+  .sectionAreaGestor input {
+    border: solid 2px white;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    font-size: 16px;
+    padding: .7em 0 .7rem .7rem;
+    width: 100%;
+  }
+  
+  .sectionAreaGestor label {
+    color: white;
+    font-weight: bold;
+    pointer-events: none;
+    font-size: 14px;
+  }
+  
+  .sectionAreaGestor button {
+    background-color: white;
+    border: white;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-right: -15px;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+  }
+
+  .sectionAreaGestor button a{
+    text-decoration: none;
+    color: black;
+  }
+
+  @media (min-width: 770px) {
+    .containerAreaGestor {
+      width: 40%;
+      margin: 0 auto;
+      border: solid 2px white;
+    }
+    .sectionAreaGestor{
+      margin: 2rem auto;
+    }
+    .titleAreaGestor {
+      font-family: Indie;
+      align-items: center;
+      margin: 0 auto;
+      font-size: 40px;
+    }
+
+    .btnConectese {
+      padding: 8px;
+    }
+  }
+
+  

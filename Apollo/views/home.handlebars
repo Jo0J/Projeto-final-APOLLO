@@ -1,0 +1,100 @@
+<div class="body">
+    <div class="content">
+      <h1 class="neon-pink">APOLLO P13</h1>
+      <h3 class="neon-white">D   E   L   U   X   E</h3>
+      <p>Com 512GB de memória, processador snapdragon 8 gen 2
+e 16gb de memória ram</p>
+    </div>
+    <button class="buttonpage2"><a href="/produtos">Saiba mais</a>
+    </button>
+</div>
+<div class="body2">
+    <div class="container">
+      <div class="left-side">
+        <h1>Contagem para revolução</h1>
+        <p>O mundo todo aguarda o lançamento do APOLLO P13, que promete revolucionar o mundo dos smartphones.</p>
+        <div id="countdown"></div>
+      </div>
+      <div class="right-side">
+        <div class="rectangle1">
+          <img src="/img/apollop13.png" alt="Imagem do produto">
+        </div>
+      </div>
+    </div>
+    <script>
+        var countDownDate = new Date("Feb 6, 2023 11:00:00").getTime();
+
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "Lançamento realizado!";
+  }
+}, 1000);
+
+    </script>
+</div>
+<div class="page3">
+
+    <h1>APOLLO além das fronteiras</h1>
+    <h2>Os smartphones mais vendidos do mundo atualmente</h2>
+   <div class="joao"> 
+     <div class="rectangle">
+      <img src="/img/1.png" alt="APOLLO P12 PRO">
+      <h3>APOLLO P12 PRO</h3>
+      <p>Compacto. Rápido. Imersivo.</p>
+      <button><a href="/produtos/apollop12pro">Saiba mais</a></button>
+    </div>
+    <div class="rectangle">
+      <img src="/img/2.png" alt="APOLLO P12 PRO">
+      <h3>APOLLO P11 PRO</h3>
+      <p>Com o melhor processador</p>
+      <button><a href="/produtos/apollop11pro">Saiba mais</a></button>
+    </div>
+    <div class="rectangle">
+      <img src="/img/3.png" alt="APOLLO P12 PRO">
+      <h3>APOLLO P12 LITE</h3>
+      <p>A revolução em suas mãos</p>
+      <button><a href="/produtos/apollop12lite">Saiba mais</a></button>
+    </div>
+  </div>
+</div>
+<div class="page4">
+<div class="news-container">
+  <div class="news-card">
+    <a href="/noticia1">
+      <img src="/img/card1.png" alt="Notícia 1">
+    </a>
+    <h2><a href="/noticia1">APOLLO P13 DELUXE é destaque na feira tecnológica de Buenos Aires</a></h2>
+    <p>Novo dispositivo da Apollo apresenta avanços na tela, processador e bateria. Recebe elogios dos visitantes e críticos no evento.</p>
+  </div>
+  <div class="news-card">
+    <a href="/noticia2">
+      <img src="/img/card2.png" alt="Notícia 2">
+    </a>
+    <h2><a href="/noticia2">APOLLO P12 PRO ultrapassa a marca de 50 milhões de vendas</a></h2>
+    <p>Smartphone da Apollo consolida posição como um dos mais populares no mercado mundial. Empresa comemora sucesso e anuncia novidades para o futuro.</p>
+  </div>
+  <div class="news-card">
+    <a href="/noticia3">
+      <img src="/img/card3.png" alt="Notícia 3">
+    </a>
+    <h2><a href="/noticia3">Especificações do APOLLO P14 GOLD são divulgadas na Gold Center</a></h2>
+    <p>Novo dispositivo da Apollo promete revolucionar. Recursos avançados, como câmera de 64MP e bateria de 8.000mAh, chamam atenção.</p>
+  </div>
+</div>
+
+</div>
+
+
+

@@ -1,0 +1,51 @@
+
+
+<footer>
+  <div class="info-container">
+    <div style="display: flex; flex-direction: column;">
+      <h3>Informações</h3>
+      <a href="/sobre">Sobre</a>
+      <a href="/produtos">Ofertas</a>
+      <a href="/atualizacao">Atualizações</a>
+      <a href="/produtos">Novos produtos</a>
+      <a href="/loja">Em desenvolvimento</a>
+    </div>
+    <div style="display: flex; flex-direction: column;">
+      <h3>Mais pesquisados</h3>
+      <a href="/produtos/apollop11lite">APOLLO P11 LITE</a>
+      <a href="/produtos/apollop11pro">APOLLO P11 PRO</a>
+      <a href="/produtos/apollop12lite">APOLLO P12 LITE</a>
+      <a href="/produtos/apollop12pro">APOLLO P12 PRO</a>
+      <a href="/produtos/apollop13deluxe">APOLLO P13 DELUXE</a>
+    </div>
+    <div style="display: flex; flex-direction: column;">
+      <h3>Páginas</h3>
+      <a href="/">Início</a>
+      <a href="/loja">Loja</a>
+      <a href="/produtos">Produtos</a>
+      <a href="/suporte">Suporte</a>
+      <a href="/adm">Administrador</a>
+    </div>
+  </div>
+  <div class="buttton-footer" style="display: flex; flex-direction: column;">
+    <h3>Registre seu email para ofertas</h3>
+    <input type="email"/>
+    <button type="button" class="btn-footer">Enviar</button>
+  </div>
+</footer>
+
+
+<script>
+const input = document.querySelector('input[type="email"]');
+const button = document.querySelector('.btn-footer');
+
+button.addEventListener('click', function() {
+  if (input.value.includes('@') && input.value !== '') {
+    alert("Email registrado com sucesso!");
+    input.value = '';
+  } else {
+    alert("Por favor, insira um email válido");
+  }
+});
+
+</script>
